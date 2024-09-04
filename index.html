@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticketing</title>
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Raleway:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'hero-bg': "url('./images/banner.png')",
+                    },
+                    colors: {
+                        'bus-main': '#1DD100',
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-raleway">
+    <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+        <!-- navbar -->
+        <div class="navbar bg-base-100 mb-5">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-medium text-lg">
+
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-[#1DD1001A] text-bus-main border-[#1DD10066]">Bus <img src="./images/bus-icon.png"
+                        alt=""></a>
+            </div>
+        </div>
+
+        <!-- hero -->
+        <div class="hero min-h-[calc(100vh-66px)] bg-hero-bg rounded-3xl">
+
+            <div class="hero-content text-neutral-content text-center align-text-top">
+                <div class="max-w-2xl">
+                    <h1 class="mb-5 text-3xl md:text-4xl lg:text-6xl font-extrabold text-white">End-to-End Travel with <span
+                            class="text-bus-main">P Paribahan</span></h1>
+                    <p class="mb-5 font-inter">
+                        Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                        features allow for a streamlined .
+                    </p>
+                    <button class="btn bg-bus-main border-none font-bold text-sm md:text-xl">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+        <!-- stat -->
+        <div class="flex flex-col lg:flex-row  gap-4 font-inter justify-center mb-4 lg:-mt-12">
+            <div class="flex space-x-4 bg-white border-b-2 p-6 border-bus-main rounded-xl">
+                <div>
+                    <img src="./images/people.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl md:text-4xl font-bold">500K+</h1>
+                    <p class="text-[#03071299]">Registered users</p>
+                </div>
+            </div>
+            <div class="flex space-x-4 bg-white border-b-2 p-6 border-bus-main rounded-xl">
+                <div>
+                    <img src="./images/ticket-cupon.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl md:text-4xl font-bold">1.7 lacks</h1>
+                    <p class="text-[#03071299]" >Tickets sold</p>
+                </div>
+            </div>
+            <div class="flex space-x-4 bg-white border-b-2 p-6 border-bus-main rounded-xl">
+                <div>
+                    <img src="./images/people.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl md:text-4xl font-bold">80K+</h1>
+                    <p class="text-[#03071299]">Rental partners</p>
+                </div>
+            </div>
+
+        </div>
+       
+    </header>
+    <main>
+        <!-- offers -->
+         <section  class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+           
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold">Best offers for you</h2>
+                </div>
+            <div class="flex flex-col lg:flex-row gap-5  my-10">
+                <div class="flex flex-1 justify-between bg-[#FFBF0F] p-8 rounded-2xl">
+                    <div class="font-inter">
+                        <h3 class="text-2xl md:text-4xl font-black">15% OFF</h3>
+                        <h5 class="text-sm md:text-xl font-semibold">on your next purchase</h5>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="border-2 border-dashed "></div>
+                    <div class=" ">
+                        <h3 class="text-xl md:text-3xl font-bold">NEW15</h3>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex flex-1 justify-between bg-[#F78C9C] p-8 rounded-2xl">
+                    <div class="font-inter ">
+                        <h3 class="text-2xl md:text-4xl font-black">20% OFF</h3>
+                        <h5 class="text-xl font-semibold">on your next purchase</h5>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="border-2 border-dashed "></div>
+                    <div class="i">
+                        <h3 class="text-xl md:text-3xl font-bold">Couple 20</h3>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="text-center">
+                <button class="btn text-bus-main font-bold text-xl border-bus-main bg-white">See All Offers</button>
+            </div>
+         </section>
+
+         <!-- ticket -->
+          <section>
+            <div class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+                <div class="text-center space-y-5">
+                    <h2 class="text-4xl font-bold">P.H Paribahan</h2>
+                    <p class="text-[#03071299] font-inter">Yes, you can run unit tests and view the results directly within the app. The integrated <br>testing features allow for a streamlined .</p>
+                </div>
+            </div>
+          </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

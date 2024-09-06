@@ -48,14 +48,14 @@
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/1000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-4 cursor-pointer shadow">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Destination</a></li>
@@ -86,8 +86,8 @@
 
             <div class="hero-content text-neutral-content text-center align-text-top">
                 <div class="max-w-2xl">
-                    <h1 class="mb-5 text-3xl md:text-4xl lg:text-6xl font-extrabold text-white">End-to-End Travel with <span
-                            class="text-bus-main">P Paribahan</span></h1>
+                    <h1 class="mb-5 text-3xl md:text-4xl lg:text-6xl font-extrabold text-white">End-to-End Travel with
+                        <span class="text-bus-main">P Paribahan</span></h1>
                     <p class="mb-5 font-inter">
                         Yes, you can run unit tests and view the results directly within the app. The integrated testing
                         features allow for a streamlined .
@@ -113,7 +113,7 @@
                 </div>
                 <div>
                     <h1 class="text-2xl md:text-4xl font-bold">1.7 lacks</h1>
-                    <p class="text-[#03071299]" >Tickets sold</p>
+                    <p class="text-[#03071299]">Tickets sold</p>
                 </div>
             </div>
             <div class="flex space-x-4 bg-white border-b-2 p-6 border-bus-main rounded-xl">
@@ -127,15 +127,15 @@
             </div>
 
         </div>
-       
+
     </header>
     <main>
         <!-- offers -->
-         <section  class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
-           
-                <div class="text-center">
-                    <h2 class="text-4xl font-bold">Best offers for you</h2>
-                </div>
+        <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+
+            <div class="text-center">
+                <h2 class="text-4xl font-bold">Best offers for you</h2>
+            </div>
             <div class="flex flex-col lg:flex-row gap-5  my-10">
                 <div class="flex flex-1 justify-between bg-[#FFBF0F] p-8 rounded-2xl">
                     <div class="font-inter">
@@ -161,71 +161,169 @@
                         <p>Coupon Code</p>
                     </div>
                 </div>
-                
+
             </div>
             <div class="text-center">
                 <button class="btn text-bus-main font-bold text-xl border-bus-main bg-white">See All Offers</button>
             </div>
-         </section>
+        </section>
 
-         <!-- ticket -->
-          <section class="bg-gray-100 border-bus-main border-t-2 rounded-t-[50px]">
+        <!-- ticket -->
+        <section class="bg-gray-100 border-bus-main border-t-2 rounded-t-[50px]">
             <div class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
-                <div class="text-center space-y-5">
-                    <h2 class="text-4xl font-bold">P.H Paribahan</h2>
-                    <p class="text-[#03071299] font-inter">Yes, you can run unit tests and view the results directly within the app. The integrated <br>testing features allow for a streamlined .</p>
-                </div>
-                <div class="grid grid-cols-4  gap-4 my-10 bg-white rounded-3xl">
-                   <div class="col-span-3 p-10">
-                        <div class="flex  justify-between mb-4">
-                            <div class="flex space-x-4">
-                                <div>
-                                    <img src="./images/bus-logo.png" alt="">
+                <div>
+                    <div class="text-center space-y-5">
+                        <h2 class="text-4xl font-bold">P.H Paribahan</h2>
+                        <p class="text-[#03071299] font-inter">Yes, you can run unit tests and view the results directly
+                            within the app. The integrated <br>testing features allow for a streamlined .</p>
+                    </div>
+                    <div class="grid grid-cols-4  gap-4 my-10 bg-white rounded-3xl">
+                        <div class="col-span-3 p-10">
+                            <div class="flex  justify-between mb-4">
+                                <div class="flex space-x-4">
+                                    <div>
+                                        <img src="./images/bus-logo.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-2xl md:text-4xl font-bold">Greenline Paribahan</h1>
+                                        <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h1 class="text-2xl md:text-4xl font-bold">Greenline Paribahan</h1>
-                                    <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                                <a class="btn bg-[#1DD10026] text-bus-main"><img src="./images/seat-green.png" alt="">40
+                                    Seats left</a>
+                            </div>
+                            <div class="overflow-x-auto bg-base-100 space-y-4 p-4 rounded-2xl ">
+                                <table class="table">
+
+                                    <tbody class="space-y-4">
+                                        <!-- row 1 -->
+                                        <tr class="border-b-2 border-dashed border-gray-300 font-semibold ">
+                                            <td class="text-[#03071299]">Route</td>
+                                            <td>Dhaka - Sylhet</td>
+                                        </tr>
+                                        <!-- row 2 -->
+                                        <tr class="border-b-2 border-dashed border-gray-300 font-semibold">
+
+                                            <td class="text-[#03071299]">Departure Time</td>
+                                            <td>9:00 PM</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="flex justify-evenly font-inter">
+                                    <a href="" class="btn bg-gray-300">Boarding Point - Laxmipur</a>
+                                    <a href="" class="btn bg-gray-300">Dropping Point - Bogura</a>
+                                    <a href="" class="btn bg-gray-300">BEst. Time - 11 Hour</a>
                                 </div>
                             </div>
-                            <a class="btn bg-[#1DD10026] text-bus-main"><img src="./images/seat-green.png"
-                                alt="">40 Seats left</a>
                         </div>
-                        <div class="overflow-x-auto bg-base-200 space-y-4 p-4 rounded-2xl ">
-                            <table class="table">
-                              
-                              <tbody class="space-y-4">
-                                <!-- row 1 -->
-                                <tr class="border-b-2 border-dashed border-gray-300 font-semibold ">
-                                  <td class="text-[#03071299]">Route</td>
-                                  <td>Dhaka - Sylhet</td>
-                                </tr>
-                                <!-- row 2 -->
-                                <tr class="border-b-2 border-dashed border-gray-300 font-semibold">
-                                 
-                                  <td class="text-[#03071299]">Departure Time</td>
-                                  <td>9:00 PM</td>
-                                </tr>
-                              
-                              </tbody>
-                            </table>
-                            <div class="flex justify-evenly font-inter">
-                                <a href="" class="btn bg-gray-300">Boarding Point - Laxmipur</a>
-                                <a href="" class="btn bg-gray-300">Dropping Point - Bogura</a>
-                                <a href="" class="btn bg-gray-300">BEst. Time - 11 Hour</a>
+
+                        <div class="flex justify-center items-center border-l-2 border-dashed border-bus-main">
+                            <div class="">
+                                <img src="./images/fare.png" alt="">
+                                <h2 class="text-3xl font-bold">550 Taka</h2>
+                                <p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
                             </div>
-                          </div>
-                    </div>    
-                    
-                    <div class="flex justify-center items-center border-l-2 border-dashed border-bus-main">
-                        <div class="">
-                            <img src="./images/fare.png" alt="">
-                        <h2 class="text-3xl font-bold">550 Taka</h2>
-                        <p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- seat-section -->
+                <div class="grid grid-cols-5 bg-white rounded-3xl p-3">
+                    <div class="col-span-3 p-8">
+                        <div class="font-inter">
+                            <h3 class="font-raleway text-2xl font-semibold mb-3 ">Select Your Seat</h3>
+                            <div class="flex justify-between border-y-2 border-dashed py-3 ">
+                                <a href="" class="flex gap-4 cursor-pointer"><img src="./images/seat-gray.png" alt="">Available</a>
+                                <a href="" class="text-bus-main flex gap-2"><img src="./images/seat-green-filled.png"
+                                        alt="">Selected</a>
+                            </div>
+                            <!-- seat -->
+                            
+                           
+                            <div class="grid grid-cols-10 gap-5 text-[#03071280]">
+                                <div class=" grid p-3 bg-gray-200 rounded-xl col-span-2 col-start-9 justify-center mt-5 ">
+                                    <img class=" " src="./images/stayring.svg" alt="">
+    
+                                </div>
+                                <div class="grid grid-rows-10 text-center items-center">
+                                    <div class="font-medium">A</div>
+                                    <div class="font-medium">B</div>
+                                    <div class="font-medium">C</div>
+                                    <div class="font-medium">D</div>
+                                    <div class="font-medium">E</div>
+                                    <div class="font-medium">F</div>
+                                    <div class="font-medium">G</div>
+                                    <div class="font-medium">H</div>
+                                    <div class="font-medium">I</div>
+                                    <div class="font-medium">J</div>
+                                </div>
+                                <!-- frist col -->
+                                <div class="grid grid-rows-10 col-span-2 text-center gap-5">
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">A1</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">B1</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">C1</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">D1</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">E1</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">F1</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">G1</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">H1</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">I1</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">J1</div>
+                                </div>
+                                <!-- col-2 -->
+                                <div class="grid grid-rows-10 col-span-2 text-center gap-5">
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">A2</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">B2</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">C2</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">D2</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">E2</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">F2</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">G2</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">H2</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">I2</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">J2</div>
+                                </div>
+                                <!-- col-3 -->
+                                <div class="grid grid-rows-10 col-span-2 col-start-7 text-center gap-5">
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">A3</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">B3</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">C3</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">D3</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">E3</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">F3</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">G3</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">H3</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">I3</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">J3</div>
+                                </div>
+                                <!-- col-4 -->
+                                <div class="grid grid-rows-10 col-span-2 text-center gap-5">
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">A4</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">B4</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">C4</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">D4</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">E4</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">F4</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">G4</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">H4</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">I4</div>
+                                    <div class="p-4 cursor-pointer bg-gray-100 rounded-xl">J4</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-2 p-8 border-l-2 border-dashed">
+                        <div class="font-inter">
+                            <h3 class="font-raleway text-2xl font-semibold pb-3  border-b-2 border-dashed ">Select Your Seat</h3> 
                         </div>
                     </div>
                 </div>
             </div>
-          </section>
+
+            <!-- seat -->
+
+        </section>
     </main>
     <footer>
 

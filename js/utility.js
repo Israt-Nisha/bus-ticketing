@@ -9,7 +9,7 @@ function updateGrandTotal(status) {
     if (status) {
         
         const couponCode = document.getElementById("coupon-code").value;
-        status.classList.remove("btn-disabled");
+       
         if(couponCode === "NEW15"){
             const discounted = totalCost * 0.15;
             document.getElementById("grand-total").innerText =totalCost -discounted;
@@ -37,16 +37,18 @@ function updateTotalPrice(value) {
     const totalCost = getConvertValue("total-cost");
     const sum = totalCost + parseInt(value);
     document.getElementById("total-cost").innerText = sum;
-    console.log(sum);
+    
 }
 
 function updateSeat() {
     const seatCount = getConvertValue("seat-count");
+ 
+    
     const sum = seatCount + 1;
     const selectedSeat = document.getElementById("seat-count");
     selectedSeat.classList.add("bg-bus-main", "text-white", "px-1", "rounded");
     selectedSeat.innerText = sum
-    console.log(sum);
+    
 
 }
 
